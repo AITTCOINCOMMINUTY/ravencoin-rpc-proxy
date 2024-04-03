@@ -4,7 +4,7 @@
   "description": "Ravencoin Web API via safe proxy",
   "main": "index.js",
   "dependencies": {
-    "@ravenrebels/ravencoin-rpc": "^0.3.3",
+    "@ravenrebels/ravencoin-rpc": "git+https://github.com/AITTCOINCOMMINUTY/ravencoin-rpc",
     "cors": "2.8.5",
     "express": "4.18.2",
     "p-queue": "6.6.2"
