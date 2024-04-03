@@ -46,7 +46,7 @@ const app = express();
 app.use(cors());
 
 //Default size limit for request are too small, increase it
-app.use(express.json({ limit: "2mb" }));
+app.use(express.json({ limit: "4mb" }));
 
 const config = getConfig();
 
