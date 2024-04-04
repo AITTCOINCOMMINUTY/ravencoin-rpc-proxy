@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="pico.min.css" />
-    <title>Ravencoin RPC</title>
+    <title>AITTCOIN RPC LIST</title>
 
     <link
       rel="stylesheet"
@@ -17,62 +17,11 @@
     <main class="container">
       <h1>RPC <rpc-settings key="environment" /></h1>
       <article>
-        <h2>Sir, what is this?</h2>
-
-        <p>This service provides dedicated access to the blockchain.</p>
-
-        <p>
-          As a developer, if you are looking to build something on the
-          <rpc-settings key="environment"></rpc-settings>, this RPC service can
-          jumpstart your development.
-        </p>
-
-        <p>
-          The node is fully indexed and is running on
-          <rpc-settings key="environment"></rpc-settings>.
-        </p>
-        <p>
-          You can send remote procedure calls (RPCs) in the same way as if you had a local node. Whitelisted procedure calls are listed below.
-        </p>
-        <p>
-          We operate on a best effort basis, doing everything possible to
-          maintain service availability. However, like any online service, we
-          face challenges such as maintenance requirements and unexpected
-          technical issues.
-        </p>
-        <p>
-          Found a bug? Contact us on Twitter
-          <a href="https://twitter.com/RavenRebels">Raven Rebels</a>
-        </p>
-        <p>Open source on GitHub <a href="https://github.com/ravenrebels/ravencoin-rpc-proxy">https://github.com/ravenrebels/ravencoin-rpc-proxy</a></p>
-      </article>
-
-      <article>
         <h3>Endpoint</h3>
         <span><rpc-settings key="endpoint" id="endpoint"></rpc-settings></span>
         <button id="copyEndpointButton">Copy</button>
       </article>
 
-      <article>
-        <h3>Sir, what about perfomance?</h3>
-        <p>
-          To get low latency and to support a massive amount of concurrent
-          requests we Cache and Queue
-        </p>
-        <p>
-          <b>Queue-Based Load Leveling</b><br />
-          The queue serves as a buffer between the public API endpoint and the
-          blockchain node, aiming to smooth out intermittent heavy loads that
-          could cause the node to fail. This approach minimizes the impact of
-          peak demand on system availability and responsiveness.
-        </p>
-        <p>
-          <b>Cache</b><br />
-          Requests are cached for the duration of the current block, ensuring
-          that the cache remains completely consistent with the data on the
-          blockchain
-        </p>
-      </article>
       <article>
         <h3>Whitelisted methods/procedures</h3>
         <select id="procedureSelect">
